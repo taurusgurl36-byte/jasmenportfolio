@@ -10,9 +10,9 @@ export const personalInfo = {
     "I'm a Computer Engineering student at the Institute of Creative Computer Technology (ICCT). My skills include basic programming, JavaScript, UI/UX design, embedded systems, and Lego robotics.",
     "My academic projects include ICCT CSLMS, where I served as UI/UX Lead Designer, and Embedded Systems: Medicare, where I designed, programmed, tested, and troubleshot embedded systems as a System Engineer.",
   ],
-  avatarLight: "/assets/jasmen-profile.jpg",
-  avatarDark: "/assets/jasmen-profile.jpg",
-  resume: "/assets/jasmen-resume.pdf",
+  avatarLight: `${import.meta.env.BASE_URL}assets/jasmen-profile.jpg`,
+  avatarDark: `${import.meta.env.BASE_URL}assets/jasmen-profile.jpg`,
+  resume: `${import.meta.env.BASE_URL}assets/jasmen-resume.pdf`,
 };
 
 export const socialLinks = [

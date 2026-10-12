@@ -9,7 +9,7 @@ function SocialIcon({ name }) {
   if (name === "facebook") {
     return (
       <img
-        src="/assets/facebook-logo.png"
+        src="/jasmenportfolio/assets/facebook-logo.png"
         alt=""
         width={22}
         height={22}
