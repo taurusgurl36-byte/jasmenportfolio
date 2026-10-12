@@ -36,9 +36,9 @@ export const projects = [
     name: "Object Oriented Programming: ICCT CSLMS",
     description:
       "An object oriented programming project at ICCT Colleges. As UI/UX Lead Designer, I led the interface design, created wireframes and prototypes, and refined layouts for usability and accessibility.",
-    preview: "/assets/icct-cslms.jpg",
+    preview: `${import.meta.env.BASE_URL}assets/icct-cslms.jpg`,
     imageMetadata: { width: 1051, height: 706 },
-    images: ["/assets/icct-cslms.jpg"],
+    images: [`${import.meta.env.BASE_URL}assets/icct-cslms.jpg`],
     imageFit: "contain",
     tags: ["UI/UX Design", "Wireframes & Prototypes", "Object Oriented Programming"],
     period: "Aug 2025 - Nov 2025",
