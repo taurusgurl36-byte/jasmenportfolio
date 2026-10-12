@@ -61,9 +61,9 @@ export const projects = [
     name: "Embedded Systems: Medicare",
     description:
       "An embedded systems project at ICCT Colleges. As System Engineer and Embedded System Engineer, I developed microcontroller systems, integrated sensors and actuators, and programmed, tested, and optimized the hardware.",
-    preview: "/assets/medicare-project.png",
+    preview: `${import.meta.env.BASE_URL}assets/medicare-project.png`,
     imageMetadata: { width: 1672, height: 940 },
-    images: ["/assets/medicare-project.png"],
+    images: [`${import.meta.env.BASE_URL}assets/medicare-project.png`],
     imageFit: "contain",
     tags: ["Embedded Systems", "Microcontrollers", "Hardware Troubleshooting"],
     period: "March 2026 - July 2026",
@@ -148,7 +148,7 @@ export const certifications = [
     issuer: "Diliman College · Happy Learner's Educational Program Services, Inc. · REF Marketing",
     description: "Certificate of Recognition",
     date: "January 20, 2019",
-    image: "/assets/robotics-certificate.jpg",
+    image: `${import.meta.env.BASE_URL}assets/robotics-certificate.jpg`,
     imageMetadata: { width: 1584, height: 2036, rotation: -90 },
   },
   {
@@ -156,7 +156,7 @@ export const certifications = [
     issuer: "ICCT Colleges — Cainta Campus",
     description: "Certificate of Recognition",
     date: "November 17, 2025",
-    image: "/assets/oop-certificate.jpg",
+   image: `${import.meta.env.BASE_URL}assets/oop-certificate.jpg`,
     imageMetadata: { width: 2048, height: 1452, rotation: 180 },
   },
 ];
