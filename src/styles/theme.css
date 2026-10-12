@@ -1,0 +1,68 @@
+:root {
+  --bg: #fff;
+  --primary: #0c0c0f;
+  --secondary: #525252;
+  --tertiary: #a3a3a3;
+  --accent: #3b82f6;
+  --border: #e5e5e5;
+  --viewer-overlay: rgb(0 0 0 / 25%);
+}
+.dark {
+  --bg: #0c0c0f;
+  --primary: #fff;
+  --secondary: #a3a3a3;
+  --tertiary: #737373;
+  --accent: #3b82f6;
+  --border: #262626;
+  --viewer-overlay: rgb(0 0 0 / 55%);
+}
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+::view-transition-old(root) {
+  mix-blend-mode: normal;
+  animation: none;
+}
+::view-transition-new(root) {
+  mix-blend-mode: normal;
+  animation: none;
+}
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 2;
+  animation: 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.3s backwards circle-reveal;
+}
+@keyframes circle-reveal {
+  0% {
+    clip-path: circle(0px at var(--reveal-x, 50%) var(--reveal-y, 50%));
+  }
+  70% {
+    clip-path: circle(
+      calc(var(--reveal-radius, 150%) * 0.7) at var(--reveal-x, 50%) var(--reveal-y, 50%)
+    );
+  }
+  75% {
+    clip-path: circle(
+      calc(var(--reveal-radius, 150%) * 0.715) at var(--reveal-x, 50%) var(--reveal-y, 50%)
+    );
+  }
+  80% {
+    clip-path: circle(
+      calc(var(--reveal-radius, 150%) * 0.73) at var(--reveal-x, 50%) var(--reveal-y, 50%)
+    );
+  }
+  90% {
+    clip-path: circle(
+      calc(var(--reveal-radius, 150%) * 0.85) at var(--reveal-x, 50%) var(--reveal-y, 50%)
+    );
+  }
+  to {
+    clip-path: circle(var(--reveal-radius, 150%) at var(--reveal-x, 50%) var(--reveal-y, 50%));
+  }
+}

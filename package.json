@@ -1,0 +1,29 @@
+{
+  "name": "jasmineportfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "phone": "vite preview --host 0.0.0.0 --port 4175 --strictPort",
+    "format": "prettier --write \"src/**/*.{js,jsx,css}\" \"tests/**/*.js\" index.html vite.config.js package.json README.md .prettierrc.json",
+    "format:check": "prettier --check \"src/**/*.{js,jsx,css}\" \"tests/**/*.js\" index.html vite.config.js package.json README.md .prettierrc.json",
+    "test": "node --test",
+    "prephone": "npm run build"
+  },
+  "dependencies": {
+    "framer-motion": "^12.0.0",
+    "lucide-react": "^1.0.0",
+    "pdfjs-dist": "^6.4.299",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "prettier": "3.6.2",
+    "vite": "^6.0.0"
+  }
+}
